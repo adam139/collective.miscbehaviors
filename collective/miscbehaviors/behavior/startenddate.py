@@ -2,6 +2,7 @@ from zope.interface import alsoProvides, implements
 from zope.component import adapts
 from zope import schema
 from plone.directives import form
+from zope.interface import invariant, Invalid
 from plone.dexterity.interfaces import IDexterityContent
 from plone.autoform.interfaces import IFormFieldProvider
 
@@ -13,6 +14,9 @@ from collective.miscbehaviors import _
 from collective.miscbehaviors.behavior.utils import context_property
 
 from collective import dexteritytextindexer
+
+class StartBeforeEnd(Invalid):
+    __doc__ = _(u"The start or end date is invalid")
 
 class IStartEndDate(form.Schema):
     """
@@ -32,7 +36,23 @@ class IStartEndDate(form.Schema):
         description=u'',
         required=True,
     )
+    
+    @invariant
+    def validateStartEnd(data):
+        if data.startDate is not None and data.endDate is not None:
+            if data.startDate > data.endDate:
+                raise StartBeforeEnd(_(
+                    u"The start date must be before the end date."))
+@form.default_value(field=IStartEndDate['startDate'])
+def startDefaultValue(data):
+    # To get hold of the folder, do: context = data.context
+    return datetime.datetime.today() + datetime.timedelta(7)
 
+
+@form.default_value(field=IStartEndDate['endDate'])
+def endDefaultValue(data):
+    # To get hold of the folder, do: context = data.context
+    return datetime.datetime.today() + datetime.timedelta(10)
 
 alsoProvides(IStartEndDate,IFormFieldProvider)
 
