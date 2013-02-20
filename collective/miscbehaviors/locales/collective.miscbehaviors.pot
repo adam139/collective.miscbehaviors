@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2012-12-05 06:59+0000\n"
+"POT-Creation-Date: 2013-02-19 01:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,94 +15,102 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: collective.miscbehaviors\n"
+"Domain: collective.conference\n"
 
-#: ../../miscbehaviors/behavior/paypal.py:65
+#: ./behavior/paypal.py:65
 msgid "Amount"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:34
+#: ./behavior/paypal.py:34
 msgid "Button Type"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/contactinfo.py:32
+#: ./behavior/contactinfo.py:32
 msgid "Contact Email"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/contactinfo.py:26
+#: ./behavior/contactinfo.py:26
 msgid "Contact Name"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/contactinfo.py:38
+#: ./behavior/contactinfo.py:38
 msgid "Contact Phone"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:48
+#: ./behavior/paypal.py:48
 msgid "Currency"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:43
+#: ./behavior/paypal.py:43
 msgid "Email"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/startenddate.py:31
+#: ./behavior/startenddate.py:35
 msgid "End Date"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:66
+#: ./behavior/paypal.py:66
 msgid "Enter the amount. Set to -1 to allow user to enter their own amount"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:73
+#: ./behavior/paypal.py:73
 msgid "Enter the shipping amount. Not needed for donation"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:80
+#: ./behavior/paypal.py:80
 msgid "Enter the tax rate in %. Not needed for donation"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/fileattachment.py:22
+#: ./behavior/fileattachment.py:22
 msgid "File Attachment"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:55
+#: ./behavior/paypal.py:55
 msgid "Item Name / Organization"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:60
+#: ./behavior/paypal.py:60
 msgid "Item Number / Donation ID"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/leadimage.py:23
+#: ./behavior/leadimage.py:23
 msgid "Lead Image"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/leadimage.py:29
+#: ./behavior/leadimage.py:29
 msgid "Lead Image Caption"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/remoteurl.py:26
+#: ./behavior/remoteurl.py:26
 msgid "Link"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:21
+#: ./behavior/paypal.py:21
 msgid "Paypal"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:72
+#: ./behavior/paypal.py:72
 msgid "Shipping"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/startenddate.py:25
+#: ./behavior/startenddate.py:29
 msgid "Start Date"
 msgstr ""
 
-#: ../../miscbehaviors/behavior/paypal.py:79
+#: ./behavior/paypal.py:79
 msgid "Tax"
 msgstr ""
 
+#: ./behavior/startenddate.py:44
+msgid "The start date must be before the end date."
+msgstr ""
+
+#: ./behavior/startenddate.py:19
+msgid "The start or end date is invalid"
+msgstr ""
+
 #. Default: "Body Text"
-#: ../../miscbehaviors/behavior/bodytext.py:27
+#: ./behavior/bodytext.py:27
 msgid "label_body_text"
 msgstr ""
 
